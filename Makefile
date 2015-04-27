@@ -1,4 +1,5 @@
 ifneq ($(KERNELRELEASE),)
+ccflags-y := -std=gnu99 -Wno-declaration-after-statement
 obj-m := newKeyLog.o
 else
 KERNELDIR ?= /lib/modules/$(shell uname -r)/build
