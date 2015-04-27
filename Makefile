@@ -1,5 +1,5 @@
 ifneq ($(KERNELRELEASE),)
-obj-m := klogger.o
+obj-m := newKeyLog.o
 else
 KERNELDIR ?= /lib/modules/$(shell uname -r)/build
 PWD := $(shell pwd)

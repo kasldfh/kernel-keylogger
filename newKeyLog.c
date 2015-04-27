@@ -2,12 +2,12 @@
 #ifndef KEY_LOGGER
 #define KEY_LOGGER
 #include <linux/keyboard.h>
-
+#include <linux/module.h>
+#include <linux/kernel.h>
 
 #include <linux/kernel.h>
 #include <asm/uaccess.h>
 
-#include "klogger.h"
 
 #ifndef KEY_LOGGER_H
 #define KEY_LOGGER_H
